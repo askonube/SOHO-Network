@@ -65,27 +65,41 @@ As previously stated, the base network IP address is `192.168.1.0`, which is a C
 Because two network bits must be borrowed, the new binary form will be `11111111.11111111.11111111.11000000`, where the two bits are borrowed from the host portion. Converting it back to decimal form will yield `255.255.255.192`, which will be the new subnet mask or in CIDR notation `/26`. This new subnet mask will define the increment between network addresses in that subnet, also known as the `block size`. This formula will be used to calculate the block size.
 
 `Block Size` = `256 - Value of the first octet in the subnet mask from left to right that is not 255`
+
 `Block Size` = `256 - 192`
+
 `Block Size` = `64`
 
 Each of the three subnets will contain a block of 64 addresses. This will show how the addresses will be configured incrementally from one subnet to the next.
 
-**IT Department**
+<ins>**IT Department**
+
 *Subnet 1*
+
 Network ID: 192.168.1.0
+
 Host range: 192.168.1.1 - 192.168.1.62
+
 Broadcast ID: 192.168.1.63
 
-**HR/Finance Department**
+<ins>**HR/Finance Department**
+
 *Subnet 2*
+
 Network ID: 192.168.1.64
+
 Host range: 192.168.1.65 - 192.168.1.126
+
 Broadcast ID: 192.168.1.127
 
-**Production/Distribution Department**
+<ins>**Production/Distribution Department**
+
 *Subnet 3*
+
 Network ID: 192.168.1.128
+
 Host range: 192.168.1.129 - 192.168.1.190
+
 Broadcast ID: 192.168.1.191
 
 ## Step 3: Configuration

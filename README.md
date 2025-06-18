@@ -95,10 +95,30 @@ Each of the three subnets will contain a block of 64 addresses. The addresses wi
 - Host range: 192.168.1.129 - 192.168.1.190
 - Broadcast ID: 192.168.1.191
 
-## Step 3: Configuration
+## Step 3: VLAN Configuration
 
+`Switch0` will be used to configure the different VLANs for the different departments. The switch will be enabled to configure with the commands `en` and `conf t`. 
 
+The interfaces that will need to be configured on `Switch0` will be `Fa0/2`, `Fa0/3`, and `Fa0/4`. These interfaces are connected to `VLAN 10` or the `IT Department`. 
+![image](https://github.com/user-attachments/assets/94b1bdde-2b68-4b21-8a88-6fb51e465ff2)
 
+The specified ports on `Switch0` need to be give access mode with this command `switchport mode access`. 
+
+To access a specific VLAN, the following command will be `switchport access vlan 10`. Because this VLAN didn't exist yet, this command will create `VLAN 10`. 
+
+The following will be done to interfaces `Fa0/5`, `Fa0/6`, `Fa0/7` for `VLAN 20`, and `Fa0/8`, `Fa0/9`, `Fa0/10` will connect to `VLAN 30`. 
+
+![image](https://github.com/user-attachments/assets/04393fee-1501-4a5f-9b66-dfc7f1f57580)
+
+![image](https://github.com/user-attachments/assets/85644e69-d86b-4b91-9926-3ed53d729398)
+
+The Wireless Access Points (WAPs) will also need to be configured to allow wireless connectivity for the devices in each respective VLAN. The WiFi password and the Service Set Identifier (SSID) will be created on each of the access points. 
+
+![image](https://github.com/user-attachments/assets/47f4bd1b-78b7-43e2-a9a3-3b606d4467d9)
+
+![image](https://github.com/user-attachments/assets/b0b5ef4f-1c1b-46fb-9a53-3403574b272f)
+
+![image](https://github.com/user-attachments/assets/c4e13800-3e40-4201-b153-912a4e43a5d8)
 
 
 

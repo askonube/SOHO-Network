@@ -216,4 +216,32 @@ If `Laptop1` wanted to connect to the HR/Finance department's wireless access po
 ![image](https://github.com/user-attachments/assets/f516efa3-5740-4251-a9aa-a52cd892f60d)
 
 
-For the `Tablet PC2`........
+The same will be done to connect `Tablet PC2` to `Access Point2` in the Production/Distribution Department.
+
+![image](https://github.com/user-attachments/assets/569ef540-46e6-4688-8443-ee3089768b50)
+
+![image](https://github.com/user-attachments/assets/8d60f08a-ae74-400f-82ed-e0e77ba9a4f8)
+
+![image](https://github.com/user-attachments/assets/a2a09927-3b64-450b-9bd2-5ce41a612f7f)
+
+`Tablet PC2` was successfully assigned the IP address `192.168.1.133` with a subnet mask of `255.255.255.192`. The default gateway and DNS server are both configured to be `192.168.1.129`.
+
+![image](https://github.com/user-attachments/assets/2cd5aa35-9809-42f4-90bf-e395ca5fe8e7)
+
+All devices need to be able to communicate with each other. There will be three ping tests
+1. `Smartphone0` with an IP address of `192.168.1.5/26` in `VLAN 10` will communicate with `PC2` with an IP address of `192.168.1.130/26` in `VLAN 30`.
+
+![image](https://github.com/user-attachments/assets/04e44a6d-e296-4621-8165-6bb69d410360)
+
+2. `Tablet PC2` with an IP address of `192.168.1.132/26` in `VLAN 30` will communicate with `Printer0` with an IP address of `192.168.1.3/26` in `VLAN 10`.
+
+![image](https://github.com/user-attachments/assets/bdbe973b-aa21-404f-aac4-4820e1eccc69)
+
+3. `Laptop1` with an IP address of `192.168.1.69/26` in `VLAN 20` will communicate with `Printer2` with an IP address of `192.168.1.131/26` in `VLAN 30`.
+
+![image](https://github.com/user-attachments/assets/6823ca1c-4ea6-4bda-b50d-bae67dd5a0cf)
+
+
+## Conclusion
+
+This small office/home office network build involved creating three VLANs to segment the network and improve traffic management. `Router0` was configured with sub-interfaces to enable inter-VLAN routing, allowing communication between VLANs through a single physical interface. All devices across the VLANs were properly configured to receive IP addresses and subnet masks corresponding to their respective VLANs, ensuring consistent connectivity and network functionality.

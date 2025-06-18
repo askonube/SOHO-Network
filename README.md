@@ -2,6 +2,8 @@
 
 
 ### Salty Dreams is a sardine packing company that operates their headquarters in Vancouver, Canada. They are planning to expand in Calgary, where a new network will need to be designed and operated separately from the network in Vancouver.
+<hr></hr>
+
 
 #### Checklist:
 - Base network 192.168.1.0 assigned by the Internet Service Provider (ISP)

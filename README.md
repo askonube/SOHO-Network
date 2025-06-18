@@ -107,6 +107,7 @@ The first interface that needs to be configured is `Fa0/1` which is facing the m
 
 
 The interfaces that will need to be configured on `Switch0` will be `Fa0/2`, `Fa0/3`, and `Fa0/4`. These interfaces are connected to `VLAN 10` or the `IT Department`. 
+
 ![image](https://github.com/user-attachments/assets/94b1bdde-2b68-4b21-8a88-6fb51e465ff2)
 
 The specified ports on `Switch0` need to be give access mode with this command `switchport mode access`. 
@@ -114,6 +115,8 @@ The specified ports on `Switch0` need to be give access mode with this command `
 To access a specific VLAN, the following command will be `switchport access vlan 10`. Because this VLAN didn't exist yet, this command will create `VLAN 10`. 
 
 The following will be done to interfaces `Fa0/5`, `Fa0/6`, `Fa0/7` for `VLAN 20`, and `Fa0/8`, `Fa0/9`, `Fa0/10` will connect to `VLAN 30`. 
+
+
 
 ![image](https://github.com/user-attachments/assets/04393fee-1501-4a5f-9b66-dfc7f1f57580)
 

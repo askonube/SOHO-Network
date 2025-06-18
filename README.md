@@ -216,3 +216,4 @@ If `Laptop1` wanted to connect to the HR/Finance department's wireless access po
 ![image](https://github.com/user-attachments/assets/f516efa3-5740-4251-a9aa-a52cd892f60d)
 
 
+For the `Tablet PC2`........
